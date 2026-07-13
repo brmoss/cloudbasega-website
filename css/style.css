@@ -343,6 +343,19 @@ td.cell-yes { background: var(--success-bg); color: var(--success-text); }
 td.cell-part { background: var(--warning-bg); color: var(--warning-text); }
 td.cell-no { background: var(--danger-bg); color: var(--danger); }
 
+/* Legal / long-form prose pages (terms, privacy) */
+.legal { max-width: 760px; }
+.legal h2 { font-size: 1.3rem; margin: 36px 0 10px; color: var(--gray-900); }
+.legal h2:first-child { margin-top: 0; }
+.legal h3 { font-size: 1.02rem; margin: 22px 0 6px; color: var(--gray-900); }
+.legal p { margin: 0 0 14px; color: var(--gray-700); line-height: 1.7; }
+.legal ul { margin: 0 0 16px; padding-left: 22px; color: var(--gray-700); line-height: 1.7; }
+.legal li { margin-bottom: 7px; }
+.legal dl { margin: 0 0 16px; }
+.legal dt { font-weight: 600; color: var(--gray-900); margin-top: 10px; }
+.legal dd { margin: 2px 0 0; color: var(--gray-700); line-height: 1.7; }
+.legal .legal-meta { margin-top: 30px; color: var(--gray-500); font-size: 14px; }
+
 /* Comparison table: three columns are too wide for phones. Keep it a real
    table but let it scroll sideways inside its frame, with a min-width so the
    columns stay readable rather than being crushed or clipped. */

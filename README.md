@@ -90,8 +90,11 @@ cache-buster; bump it when editing those files.
 - [ ] Deploy the forms worker and set the two endpoint constants (see above)
 - [ ] Point the domain at the new host and set up HTTPS
 - [ ] 301-redirect old Wix paths (e.g. `/order-form`, `/faqs`) to the new pages
-- [ ] Migrate the Terms & Conditions / Privacy Policy / Terms of Use content into
-      local pages (footer links currently point at the live Wix URLs)
+- [x] Migrate the Terms & Conditions / Privacy Policy / Terms of Use content into
+      local pages — done (`terms-and-conditions.html`, `privacy-policy.html`,
+      `terms-of-use.html`); all footer and form links now point at them. Content
+      is ported verbatim from the Wix pages (issue date 02/04/2024) — review for
+      the `info@qudiem.com` addresses carried over from the original before launch
 - [ ] Verify the property in Google Search Console and submit `sitemap.xml`
 - [ ] The savings calculator is deliberately an admin-time estimate, not a price
       quote — published pricing remains enquiry-based, matching current policy
