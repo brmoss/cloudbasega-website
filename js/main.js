@@ -44,6 +44,7 @@
 
     var el = function (id) { return calc.querySelector("#" + id); };
     var currency = el("sc-currency");
+    var plan = el("sc-plan");
     var type = el("sc-type");
     var aircraft = el("sc-aircraft");
     var flights = el("sc-flights");
@@ -70,12 +71,23 @@
 
       var totalFlights = n * perMonth;
 
-      /* CloudBaseGA cost: cheaper of the two activity options */
-      var costHigh = (r.high.m * mult * n) + (r.high.f * mult * totalFlights);
-      var costLow = (r.low.m * mult * n) + (r.low.f * mult * totalFlights);
-      var useHigh = costHigh <= costLow;
-      var cost = useHigh ? costHigh : costLow;
-      var opt = useHigh ? r.high : r.low;
+      /* CloudBaseGA cost: cheaper of the two activity options, or, for private
+         owner-pilots and API users, "best of both" (the lower monthly charge
+         combined with the lower per-flight charge). */
+      var isPrivate = plan && plan.value === "private";
+      var cost, opt, planLabel;
+      if (isPrivate) {
+        opt = { m: r.low.m, f: r.high.f };
+        cost = (opt.m * mult * n) + (opt.f * mult * totalFlights);
+        planLabel = "Private owner-pilot / API (best of both)";
+      } else {
+        var costHigh = (r.high.m * mult * n) + (r.high.f * mult * totalFlights);
+        var costLow = (r.low.m * mult * n) + (r.low.f * mult * totalFlights);
+        var useHigh = costHigh <= costLow;
+        cost = useHigh ? costHigh : costLow;
+        opt = useHigh ? r.high : r.low;
+        planLabel = (useHigh ? "High" : "Low") + " activity";
+      }
 
       /* Value recovered: err minutes per flight of hire revenue + maintenance */
       var recovered = (totalFlights / 60) * err * (hireRate + maintRate);
@@ -86,9 +98,11 @@
 
       el("sc-cost").textContent = money(r.symbol, cost);
       el("sc-cost-detail").textContent =
-        (useHigh ? "High" : "Low") + " activity: " +
+        planLabel + ": " +
         r.symbol + (opt.m * mult).toFixed(2) + " per aircraft + " +
         r.symbol + (opt.f * mult).toFixed(2) + " per flight";
+      var volume = el("sc-volume");
+      if (volume) volume.hidden = n < 10;
       el("sc-recovered").textContent = money(r.symbol, recovered);
       el("sc-net").textContent = money(r.symbol, net);
       el("sc-net").style.color = net >= 0 ? "var(--success-text)" : "var(--danger)";
@@ -101,8 +115,10 @@
       maint.value = DEFAULTS[type.value].maint;
       update();
     });
-    [currency, aircraft, flights, hire, maint, error].forEach(function (input) {
+    [currency, plan, aircraft, flights, hire, maint, error].forEach(function (input) {
+      if (!input) return;
       input.addEventListener("input", update);
+      input.addEventListener("change", update);
     });
     update();
   }

@@ -331,6 +331,10 @@ p { margin: 0 0 1em; }
 /* Framed app screenshot (single panel, no browser chrome) */
 .shot-frame { background: var(--primary-surface); border: 1px solid var(--primary-border); border-radius: var(--radius-xl); padding: clamp(16px, 4vw, 40px); }
 .shot-frame img { display: block; width: 100%; max-width: 940px; height: auto; margin: 0 auto; border-radius: 12px; box-shadow: 0 6px 22px rgba(0, 87, 225, 0.12); }
+.shot-frame-row { display: flex; gap: clamp(16px, 3vw, 36px); align-items: center; justify-content: center; flex-wrap: wrap; }
+.shot-frame-row .shot-main { flex: 1 1 460px; min-width: 280px; max-width: 740px; margin: 0; }
+.shot-frame-row .phone-mock { flex-shrink: 0; width: 250px; }
+.shot-frame .phone-mock img { border-radius: 0; box-shadow: none; }
 
 /* Verdict cells (comparison tables): green = solved, amber = partly, red = not */
 .cell-verdict { display: flex; align-items: flex-start; gap: 9px; }

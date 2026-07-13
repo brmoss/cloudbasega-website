@@ -22,7 +22,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
   <link rel="preload" href="assets/fonts/sofia-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/sofia-sans-latin-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=19">
+  <link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body>
 
@@ -98,7 +98,7 @@
             </tr>
             <tr>
               <th>Activity options</th>
-              <td>Every aircraft can be on <strong>low-activity</strong> or <strong>high-activity</strong> pricing. The choice is entirely yours, selectable per aircraft. High activity carries a higher monthly cost but becomes the better value above roughly <span class="mono">200</span> hours a year</td>
+              <td>Every aircraft can be on <strong>low-activity</strong> or <strong>high-activity</strong> pricing. The choice is entirely yours, selectable per aircraft. High activity carries a higher monthly cost but becomes the better value above <span class="mono">200</span> flights a year</td>
             </tr>
             <tr>
               <th>Private owners &amp; API users</th>
@@ -156,6 +156,13 @@
                 <option value="rotary">Rotary-wing</option>
               </select>
             </div>
+            <div class="form-group">
+              <label class="form-label" for="sc-plan">Pricing</label>
+              <select class="form-select" id="sc-plan">
+                <option value="standard" selected>School / club / group</option>
+                <option value="private">Private owner-pilot / API</option>
+              </select>
+            </div>
           </div>
           <div class="form-group">
             <label class="form-label" for="sc-aircraft">Aircraft in your fleet: <output id="sc-aircraft-out" for="sc-aircraft">3</output></label>
@@ -185,6 +192,7 @@
           <div>
             <span class="result-value" id="sc-cost">&pound;144</span>
             <span class="result-label">CloudBaseGA cost per month. <span id="sc-cost-detail">High activity: &pound;30.00 per aircraft + &pound;0.90 per flight</span></span>
+            <p class="calc-note" id="sc-volume" hidden>You may be eligible for a volume discount. <a href="contact.html">Speak to us about this</a>.</p>
           </div>
           <div>
             <span class="result-value" id="sc-recovered">&pound;500</span>
@@ -198,7 +206,7 @@
           <p class="calc-note">Estimates based on our standard rates (whichever of low- or high-activity is cheaper for your usage; the choice is always yours). Your exact rate is confirmed when you order.</p>
           <details class="calc-note" style="margin-top: 4px;">
             <summary style="cursor: pointer; font-weight: 600;">How these numbers are calculated</summary>
-            <p style="margin: 8px 0 0;">Cost: our standard monthly rate per aircraft plus the per-flight rate, at your fleet size and flying rate, using whichever activity option is cheaper (rotary-wing rates are double). Value recovered: your flights per month &times; timing error &times; (hire rate + maintenance cost) per minute, since each minute of error is unbilled hire time and early maintenance. Net saving: value recovered minus cost. Admin hours assume about 6 minutes of logging and transcribing per flight. Estimates, not a quote.</p>
+            <p style="margin: 8px 0 0;">Cost: our standard monthly rate per aircraft plus the per-flight rate, at your fleet size and flying rate, using whichever activity option is cheaper (rotary-wing rates are double). The Private owner-pilot / API option uses the lower monthly charge with the lower per-flight charge. Value recovered: your flights per month &times; timing error &times; (hire rate + maintenance cost) per minute, since each minute of error is unbilled hire time and early maintenance. Net saving: value recovered minus cost. Admin hours assume about 6 minutes of logging and transcribing per flight. Estimates, not a quote.</p>
           </details>
         </div>
       </div>
@@ -222,7 +230,7 @@
         </details>
         <details>
           <summary>How do the low- and high-activity options work?</summary>
-          <div class="a-body"><p>You choose, per aircraft; it's entirely optional. High-activity pricing has a higher monthly cost but works out better value once an aircraft flies more than roughly 200 hours a year; low-activity pricing suits aircraft that fly less. A working school aircraft and a group tourer on the same fleet can each be on the option that suits them, and you can select whichever you prefer.</p></div>
+          <div class="a-body"><p>You choose, per aircraft; it's entirely optional. High-activity pricing has a higher monthly cost but works out better value once an aircraft makes more than 200 flights a year; low-activity pricing suits aircraft that fly less. A working school aircraft and a group tourer on the same fleet can each be on the option that suits them, and you can select whichever you prefer.</p></div>
         </details>
         <details>
           <summary>I'm a private owner, or I only want the API. What do I pay?</summary>
@@ -303,6 +311,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=7"></script>
+<script src="js/main.js?v=8"></script>
 </body>
 </html>

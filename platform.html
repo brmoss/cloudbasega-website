@@ -22,7 +22,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
   <link rel="preload" href="assets/fonts/sofia-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/sofia-sans-latin-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=19">
+  <link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body>
 
@@ -239,6 +239,7 @@
           </div>
           <ul>
             <li>Add your maintenance engineer to the group as an Engineer</li>
+            <li>Defects reported in seconds from a phone at the aircraft, graded Minor, Be aware or Serious</li>
             <li>Defect notifications to defer or to action, with the reporter's details attached</li>
             <li>Hours to next check monitored remotely, fed by AutoLog-recorded flights</li>
             <li>Airworthiness at a glance: renewals, next checks and open defects across the fleet</li>
@@ -246,9 +247,12 @@
         </div>
 
         <div class="shot-frame">
-          <img src="assets/img/product/app-airworthiness.png" alt="The CloudBaseGA airworthiness panel for a four-aircraft fleet: two aircraft airworthy, one flagged for attention with insurance due within days and a be-aware defect, and one not airworthy with an overdue check and a grounding defect" width="1088" height="749" loading="lazy">
+          <div class="shot-frame-row">
+            <img class="shot-main" src="assets/img/product/app-airworthiness.png" alt="The CloudBaseGA airworthiness panel for a four-aircraft fleet: two aircraft airworthy, one flagged for attention with insurance due within days and a be-aware defect, and one not airworthy with an overdue check and a grounding defect" width="1088" height="749" loading="lazy">
+            <div class="phone-mock"><img src="assets/img/product/app-defect-mobile.png" alt="Reporting a defect from a phone in the CloudBaseGA tech log: severity graded Minor, Be Aware or Serious, defect details, and options to show it on the tech log and aircraft" width="390" height="780" loading="lazy"></div>
+          </div>
         </div>
-        <p class="mock-caption">Fleet airworthiness in the CloudBaseGA web app (demonstration data)</p>
+        <p class="mock-caption">Fleet airworthiness and phone defect reporting in the CloudBaseGA web app (demonstration data)</p>
         <p>For maintenance organisations, we've partnered with <a href="https://fksystems.co.uk/" rel="noopener">AeroSync</a>: a platform dedicated to engineers, powered by the AutoLog.</p>
       </div>
 
@@ -411,6 +415,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=7"></script>
+<script src="js/main.js?v=8"></script>
 </body>
 </html>
