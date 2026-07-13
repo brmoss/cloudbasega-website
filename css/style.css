@@ -328,6 +328,10 @@ p { margin: 0 0 1em; }
 .spec-table-wrap td { color: var(--gray-600); border-bottom: 1px solid var(--gray-100); }
 .spec-table-wrap tr:last-child th, .spec-table-wrap tr:last-child td { border-bottom: none; }
 
+/* Framed app screenshot (single panel, no browser chrome) */
+.shot-frame { background: var(--primary-surface); border: 1px solid var(--primary-border); border-radius: var(--radius-xl); padding: clamp(16px, 4vw, 40px); }
+.shot-frame img { display: block; width: 100%; max-width: 940px; height: auto; margin: 0 auto; border-radius: 12px; box-shadow: 0 6px 22px rgba(0, 87, 225, 0.12); }
+
 /* Verdict cells (comparison tables): green = solved, amber = partly, red = not */
 .cell-verdict { display: flex; align-items: flex-start; gap: 9px; }
 .cell-verdict .ci { flex-shrink: 0; margin-top: 3.5px; }
