@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frequently asked questions | CloudBaseGA</title>
+  <meta name="description" content="Answers to common questions about the CloudBaseGA AutoLog and Online Platform: installation, data, pricing, contracts and support.">
+  <link rel="canonical" href="https://www.cloudbasega.aero/faqs.html">
+  <meta name="theme-color" content="#0057e1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CloudBaseGA">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Frequently asked questions | CloudBaseGA">
+  <meta property="og:description" content="Answers to common questions about the CloudBaseGA AutoLog and Online Platform: installation, data, pricing, contracts and support.">
+  <meta property="og:url" content="https://www.cloudbasega.aero/faqs.html">
+  <meta property="og:image" content="https://www.cloudbasega.aero/assets/img/product/autolog-studio.png">
+  <meta property="og:image:alt" content="The CloudBaseGA AutoLog flight data recorder">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Frequently asked questions | CloudBaseGA">
+  <meta name="twitter:description" content="Answers to common questions about the CloudBaseGA AutoLog and Online Platform: installation, data, pricing, contracts and support.">
+  <meta name="twitter:image" content="https://www.cloudbasega.aero/assets/img/product/autolog-studio.png">
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="preload" href="assets/fonts/sofia-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sofia-sans-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=17">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does the AutoLog record a flight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It detects take-off and landing automatically, with no pilot input at all: on fixed-wing aircraft using speed thresholds, and on rotary-wing aircraft using a patent-pending method that detects weight off the skids. For each flight it records the aircraft registration, flight ID, date, brakes-off and brakes-on times, and location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate are the recorded times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Times are accurate to ±10 seconds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the data get off the aircraft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After each flight, the AutoLog uploads its record over the 4G cellular network, which is supported worldwide, typically within moments of engine shutdown. In 2025 the system processed 40,440 flight records, with 99.86% delivered within 5 minutes of shutdown. Local cell coverage and transient network issues account for the majority of the remainder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if the aircraft lands somewhere without phone signal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No data is lost. The AutoLog makes several upload attempts after shutdown; if it doesn't receive an acknowledgement from the server, it powers down and tries again on the next flight or the next time it's powered up, uploading every flight record that hasn't yet been acknowledged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who installs it, and how long does it take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A licensed engineer installs the AutoLog. It mounts on a quick-release plate out of sight. Where depends on the aircraft, but most commonly it sits in the empennage, behind the rear baggage compartment. The only connection to the aircraft is a power supply. Installation guidance (PDF) is available for your maintenance organisation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the installation approved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and the route depends on where your aircraft is registered, since the UK and EU have been separate systems from the UK's departure from EASA in 2021. On UK (G-registered) aircraft the UK CAA is the regulator, and the AutoLog is fitted as a minor modification, installed and certified by your engineer. On EU-registered aircraft it installs as an aircraft tracking system under EASA CS-STAN Standard Change CS-SC061a, a standard change for ELA2 aircraft that needs no EASA Form 1 for the equipment. Either way it's a straightforward, minor installation. (For US N-registered aircraft, see below.)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it be fitted to FAA-registered (N-reg) aircraft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Because the AutoLog is self-contained and connects only to a power supply, installation is typically classified as a minor alteration under 14 CFR Part 43: an A&P mechanic installs it using acceptable data (AC 43.13-1B/2B) and records it with a simple logbook entry. No Form 337, STC or field approval is normally needed. Your installer confirms the classification for your specific aircraft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fit it myself on a permit or experimental aircraft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often, yes. On LAA permit-to-fly aircraft (UK) and US experimental aircraft, owners can usually carry out this kind of minor installation themselves, with post-installation sign-off by your LAA inspector on a permit aircraft, or as covered by the aircraft's operating limitations on a US experimental. Check the specifics with your LAA inspector or against your operating limitations before you start."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why not just use tach or Hobbs time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For maintenance records, the FAA defines time in service as the time from when the aircraft leaves the surface of the earth until it touches down again (14 CFR 1.1). A tacho or Hobbs meter also counts run-up and taxi, so it over-counts your engine and airframe hours and brings every check and overhaul closer than it needs to be. The AutoLog records actual airborne time (and block time) to ±10 seconds. And unlike airspeed switches, weight-on-wheels switches or connected engine-data loggers, it also writes the tech log, billing and flight records automatically instead of leaving them to be transcribed by hand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I enter flights manually as well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AutoLog fills in flights automatically, but manual flight entry is fully supported, for aircraft without an AutoLog fitted or the odd flight that needs correcting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does invoicing handle our club's rate structure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Multiple charge rates per aircraft and per member are supported, along with fuel reimbursement within invoices and VAT income reporting. Online payments are supported, so members can pay immediately after a flight."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on a phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The platform is built mobile-first: booking, tech log entries and sign-offs are designed to be done standing next to the aircraft, not just at the office desktop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we integrate with our own systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A documented REST API is available, so flight data can flow into your own operations, accounting or scheduling tools. We also help third-party platforms build automated flight records into their own products, and API-only subscriptions generally cost less than the full platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a minimum commitment or fixed-term contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There are no fixed-term contracts and no minimum commitment. The AutoLog is rented as part of the subscription, so returning the equipment simply ends the service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there upfront costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's no upfront charge for the AutoLog or its delivery; it's rented as part of your subscription. Installation is arranged and paid for by you, and postage is not refundable. Aircraft based outside the UK need a €300 / $300 deposit per AutoLog, returned when the equipment is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer volume discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We usually offer a volume discount for fleets of 10 aircraft or more. Get in touch to discuss terms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is pricing structured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per aircraft, with an optional choice between low-activity and high-activity pricing. The choice is entirely yours, selectable per aircraft, for fixed-wing and rotary-wing alike. High activity costs more per month but becomes better value above roughly 200 hours a year. Single-pilot private owners, and API users who don't need the full platform, get our \"best of both\" rate: the lower monthly charge combined with the lower per-flight charge. Subscriptions are billed in GBP, EUR or USD depending on your market. See costs & savings for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I'm an existing customer. Where do I get help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please use the help desk from within the platform, or go through your club's point of contact. For anything else, email info@cloudbasega.com ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I see the system in action?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Watch the overview on YouTube , read independent reviews on Trustpilot , or ask us for a demonstration ."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="CloudBaseGA home">
+      <img src="assets/brand/logo-lockup-blue.svg" alt="CloudBaseGA">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="autolog.html">AutoLog</a>
+      <a href="platform.html">Platform</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="clients.html">Clients</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="order-form.html">Order</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-secondary btn-sm btn-login-desktop" href="https://www.cloudbasega.com/app" rel="noopener">Log in</a>
+      <a class="btn btn-primary btn-sm" href="contact.html">Contact</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Support</span>
+      <h1>Frequently asked questions</h1>
+      <p class="lead">The questions we hear most from schools, clubs and owners. If yours isn't here, <a href="contact.html">get in touch</a> and we'll answer quickly.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="section-head"><h2>The AutoLog</h2></div>
+      <div class="accordion">
+        <details>
+          <summary>How does the AutoLog record a flight?</summary>
+          <div class="a-body"><p>It detects take-off and landing automatically, with no pilot input at all: on fixed-wing aircraft using speed thresholds, and on rotary-wing aircraft using a patent-pending method that detects weight off the skids. For each flight it records the aircraft registration, flight ID, date, brakes-off and brakes-on times, and location.</p></div>
+        </details>
+        <details>
+          <summary>How accurate are the recorded times?</summary>
+          <div class="a-body"><p>Times are accurate to &plusmn;10 seconds.</p></div>
+        </details>
+        <details>
+          <summary>How does the data get off the aircraft?</summary>
+          <div class="a-body"><p>After each flight, the AutoLog uploads its record over the 4G cellular network, which is supported worldwide, typically within moments of engine shutdown. In 2025 the system processed 40,440 flight records, with 99.86% delivered within 5 minutes of shutdown. Local cell coverage and transient network issues account for the majority of the remainder.</p></div>
+        </details>
+        <details>
+          <summary>What happens if the aircraft lands somewhere without phone signal?</summary>
+          <div class="a-body"><p>No data is lost. The AutoLog makes several upload attempts after shutdown; if it doesn't receive an acknowledgement from the server, it powers down and tries again on the next flight or the next time it's powered up, uploading every flight record that hasn't yet been acknowledged.</p></div>
+        </details>
+        <details>
+          <summary>Who installs it, and how long does it take?</summary>
+          <div class="a-body"><p>A licensed engineer installs the AutoLog. It mounts on a quick-release plate out of sight. Where depends on the aircraft, but most commonly it sits in the empennage, behind the rear baggage compartment. The only connection to the aircraft is a power supply. <a href="https://www.cloudbasega.com/AutoLog-FM%20Installation%20Guidance.pdf" rel="noopener">Installation guidance (PDF)</a> is available for your maintenance organisation.</p></div>
+        </details>
+        <details>
+          <summary>Is the installation approved?</summary>
+          <div class="a-body"><p>Yes, and the route depends on where your aircraft is registered, since the UK and EU have been separate systems from the UK's departure from EASA in 2021. On UK (G-registered) aircraft the UK CAA is the regulator, and the AutoLog is fitted as a minor modification, installed and certified by your engineer. On EU-registered aircraft it installs as an aircraft tracking system under EASA CS-STAN Standard Change CS-SC061a, a standard change for ELA2 aircraft that needs no EASA Form 1 for the equipment. Either way it's a straightforward, minor installation. (For US N-registered aircraft, see below.)</p></div>
+        </details>
+        <details>
+          <summary>Can it be fitted to FAA-registered (N-reg) aircraft?</summary>
+          <div class="a-body"><p>Yes. Because the AutoLog is self-contained and connects only to a power supply, installation is typically classified as a minor alteration under 14 CFR Part 43: an A&amp;P mechanic installs it using acceptable data (AC 43.13-1B/2B) and records it with a simple logbook entry. No Form 337, STC or field approval is normally needed. Your installer confirms the classification for your specific aircraft.</p></div>
+        </details>
+        <details>
+          <summary>Can I fit it myself on a permit or experimental aircraft?</summary>
+          <div class="a-body"><p>Often, yes. On LAA permit-to-fly aircraft (UK) and US experimental aircraft, owners can usually carry out this kind of minor installation themselves, with post-installation sign-off by your LAA inspector on a permit aircraft, or as covered by the aircraft's operating limitations on a US experimental. Check the specifics with your LAA inspector or against your operating limitations before you start.</p></div>
+        </details>
+        <details>
+          <summary>Why not just use tach or Hobbs time?</summary>
+          <div class="a-body"><p>For maintenance records, the FAA defines time in service as the time from when the aircraft leaves the surface of the earth until it touches down again (14 CFR 1.1). A tacho or Hobbs meter also counts run-up and taxi, so it over-counts your engine and airframe hours and brings every check and overhaul closer than it needs to be. The AutoLog records actual airborne time (and block time) to &plusmn;10 seconds. And unlike airspeed switches, weight-on-wheels switches or connected engine-data loggers, it also writes the tech log, billing and flight records automatically instead of leaving them to be transcribed by hand.</p></div>
+        </details>
+      </div>
+
+      <div class="section-head mt-4"><h2>The Online Platform</h2></div>
+      <div class="accordion">
+        <details>
+          <summary>Can I enter flights manually as well?</summary>
+          <div class="a-body"><p>Yes. AutoLog fills in flights automatically, but manual flight entry is fully supported, for aircraft without an AutoLog fitted or the odd flight that needs correcting.</p></div>
+        </details>
+        <details>
+          <summary>Does invoicing handle our club's rate structure?</summary>
+          <div class="a-body"><p>Yes. Multiple charge rates per aircraft and per member are supported, along with fuel reimbursement within invoices and VAT income reporting. Online payments are supported, so members can pay immediately after a flight.</p></div>
+        </details>
+        <details>
+          <summary>Does it work on a phone?</summary>
+          <div class="a-body"><p>Yes. The platform is built mobile-first: booking, tech log entries and sign-offs are designed to be done standing next to the aircraft, not just at the office desktop.</p></div>
+        </details>
+        <details>
+          <summary>Can we integrate with our own systems?</summary>
+          <div class="a-body"><p>Yes. A documented REST API is available, so flight data can flow into your own operations, accounting or scheduling tools. We also help third-party platforms build automated flight records into their own products, and API-only subscriptions generally cost less than the full platform.</p></div>
+        </details>
+      </div>
+
+      <div class="section-head mt-4"><h2>Pricing &amp; contracts</h2></div>
+      <div class="accordion">
+        <details>
+          <summary>Is there a minimum commitment or fixed-term contract?</summary>
+          <div class="a-body"><p>No. There are no fixed-term contracts and no minimum commitment. The AutoLog is rented as part of the subscription, so returning the equipment simply ends the service.</p></div>
+        </details>
+        <details>
+          <summary>Are there upfront costs?</summary>
+          <div class="a-body"><p>There's no upfront charge for the AutoLog or its delivery; it's rented as part of your subscription. Installation is arranged and paid for by you, and postage is not refundable. Aircraft based outside the UK need a &euro;300 / $300 deposit per AutoLog, returned when the equipment is.</p></div>
+        </details>
+        <details>
+          <summary>Do you offer volume discounts?</summary>
+          <div class="a-body"><p>Yes. We usually offer a volume discount for fleets of 10 aircraft or more. <a href="contact.html">Get in touch</a> to discuss terms.</p></div>
+        </details>
+        <details>
+          <summary>How is pricing structured?</summary>
+          <div class="a-body"><p>Per aircraft, with an optional choice between low-activity and high-activity pricing. The choice is entirely yours, selectable per aircraft, for fixed-wing and rotary-wing alike. High activity costs more per month but becomes better value above roughly 200 hours a year. Single-pilot private owners, and API users who don't need the full platform, get our "best of both" rate: the lower monthly charge combined with the lower per-flight charge. Subscriptions are billed in GBP, EUR or USD depending on your market. See <a href="pricing.html">costs &amp; savings</a> for details.</p></div>
+        </details>
+      </div>
+
+      <div class="section-head mt-4"><h2>Support</h2></div>
+      <div class="accordion">
+        <details>
+          <summary>I'm an existing customer. Where do I get help?</summary>
+          <div class="a-body"><p>Please use the help desk from within the platform, or go through your club's point of contact. For anything else, email <a href="mailto:info@cloudbasega.com">info@cloudbasega.com</a>.</p></div>
+        </details>
+        <details>
+          <summary>Where can I see the system in action?</summary>
+          <div class="a-body"><p>Watch the overview on <a href="https://www.youtube.com/watch?v=VIAS7--50Vc" rel="noopener">YouTube</a>, read independent reviews on <a href="https://uk.trustpilot.com/review/cloudbasega.com" rel="noopener">Trustpilot</a>, or <a href="contact.html">ask us for a demonstration</a>.</p></div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div>
+        <h2>Still have a question?</h2>
+        <p>Ask us directly. Whether you have one aircraft or one hundred, we want to hear from you.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="contact.html">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/brand/logo-lockup-blue.svg" alt="CloudBaseGA">
+        <p>Automatic flight logging and complete aviation management for flying schools, clubs, private owners, engineers and airfields.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="autolog.html">AutoLog</a></li>
+          <li><a href="platform.html">Online Platform</a></li>
+          <li><a href="pricing.html">Costs &amp; savings</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="clients.html">Clients &amp; testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://uk.trustpilot.com/review/cloudbasega.com" rel="noopener">Trustpilot</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VIAS7--50Vc" rel="noopener">CloudBaseGA on YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="order-form.html">Order form</a></li>
+          <li><a href="https://www.cloudbasega.com/app" rel="noopener">Log in</a></li>
+          <li><a href="https://www.cloudbasega.com/AutoLog-FM%20Installation%20Guidance.pdf" rel="noopener">Installation guidance (PDF)</a></li>
+          <li><a href="mailto:info@cloudbasega.com">info@cloudbasega.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; <span data-year>2026</span> CloudBaseGA. All rights reserved.</span>
+      <span>
+        <a href="https://www.cloudbasega.aero/terms-and-conditions" rel="noopener">Terms &amp; Conditions</a> &nbsp;&middot;&nbsp;
+        <a href="https://www.cloudbasega.aero/privacy-policy" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp;
+        <a href="https://www.cloudbasega.aero/terms-of-use" rel="noopener">Terms of Use</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=7"></script>
+</body>
+</html>

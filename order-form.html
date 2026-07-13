@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order form | CloudBaseGA</title>
+  <meta name="description" content="Order CloudBaseGA for your aircraft: send us your details and aircraft, choose low- or high-activity pricing per aircraft, and we'll confirm your order, dispatch the AutoLog kit and set up your account.">
+  <link rel="canonical" href="https://www.cloudbasega.aero/order-form.html">
+  <meta name="theme-color" content="#0057e1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CloudBaseGA">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Order form | CloudBaseGA">
+  <meta property="og:description" content="Order CloudBaseGA for your aircraft: send us your details and aircraft, choose low- or high-activity pricing per aircraft, and we'll confirm your order, dispatch the AutoLog kit and set up your account.">
+  <meta property="og:url" content="https://www.cloudbasega.aero/order-form.html">
+  <meta property="og:image" content="https://www.cloudbasega.aero/assets/img/product/autolog-studio.png">
+  <meta property="og:image:alt" content="The CloudBaseGA AutoLog flight data recorder">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Order form | CloudBaseGA">
+  <meta name="twitter:description" content="Order CloudBaseGA for your aircraft: send us your details and aircraft, choose low- or high-activity pricing per aircraft, and we'll confirm your order, dispatch the AutoLog kit and set up your account.">
+  <meta name="twitter:image" content="https://www.cloudbasega.aero/assets/img/product/autolog-studio.png">
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="preload" href="assets/fonts/sofia-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sofia-sans-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=17">
+  <style>
+    .order-aircraft {
+      border: 1px solid var(--gray-200); border-radius: var(--radius-lg);
+      padding: 18px; margin: 0; display: grid; gap: 16px;
+    }
+    .order-aircraft legend {
+      font-size: 13px; font-weight: 700; color: var(--primary);
+      letter-spacing: 0.06em; text-transform: uppercase; padding: 0 6px;
+    }
+    .radio-row { display: flex; gap: 18px; flex-wrap: wrap; }
+    .radio-row label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 15px; color: var(--gray-700); cursor: pointer;
+    }
+    .radio-row input[type="radio"], .check-row input[type="checkbox"] { accent-color: var(--primary); width: 17px; height: 17px; }
+    .check-row { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--gray-700); }
+    .check-row input { margin-top: 3px; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="CloudBaseGA home">
+      <img src="assets/brand/logo-lockup-blue.svg" alt="CloudBaseGA">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="autolog.html">AutoLog</a>
+      <a href="platform.html">Platform</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="clients.html">Clients</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="order-form.html">Order</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-secondary btn-sm btn-login-desktop" href="https://www.cloudbasega.com/app" rel="noopener">Log in</a>
+      <a class="btn btn-primary btn-sm" href="contact.html">Contact</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Order form</span>
+      <h1>Ready to get started?</h1>
+      <p class="lead">Simply fill out the form below to send us your details and requirements. We'll take it from there.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>What happens next</h2>
+      </div>
+      <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Send us your details</h3>
+          <p>Complete and submit the form below with your details, delivery address and aircraft.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Set up payment</h3>
+          <p>UK customers receive an online Direct Debit mandate link by email. For EUR and USD customers we'll confirm payment arrangements for your region.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Confirmation &amp; delivery</h3>
+          <p>We confirm your order, dispatch the AutoLog kit and email your account login details. There's no upfront charge for the unit or its delivery, but for aircraft based outside the UK we first invoice a refundable &euro;300 / $300 deposit per AutoLog.</p>
+        </div>
+      </div>
+      <p class="small muted mt-2">The AutoLog is rented: return the equipment and any deposit is refunded, less outstanding charges. Installation costs and postage are not refundable.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Your order</h2>
+        <p>Fields marked * are required. Add up to three aircraft here. More than three? Just <a href="contact.html">contact us</a> and we'll handle it directly.</p>
+      </div>
+
+      <form id="order-form" novalidate style="display: grid; gap: 34px; max-width: 860px;">
+
+        <div class="hp-field" aria-hidden="true">
+          <label for="o-website">Leave this field empty</label>
+          <input id="o-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div>
+          <h3 class="mt-0">Contact details</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="o-first">First name *</label>
+              <input class="form-input" id="o-first" type="text" autocomplete="given-name" required>
+              <span class="field-error" id="err-o-first">Please enter your first name.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-last">Last name *</label>
+              <input class="form-input" id="o-last" type="text" autocomplete="family-name" required>
+              <span class="field-error" id="err-o-last">Please enter your last name.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-company">Company / organisation</label>
+              <input class="form-input" id="o-company" type="text" autocomplete="organization">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-phone">Phone (with country code) *</label>
+              <input class="form-input" id="o-phone" type="tel" autocomplete="tel" placeholder="+44&hellip;" required>
+              <span class="field-error" id="err-o-phone">Please enter a phone number with country code.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-email">Contact email *</label>
+              <input class="form-input" id="o-email" type="email" autocomplete="email" required>
+              <span class="field-error" id="err-o-email">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-billing-email">Billing email (if different)</label>
+              <input class="form-input" id="o-billing-email" type="email">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mt-0">Billing address</h3>
+          <div class="form-grid">
+            <div class="form-group full">
+              <label class="form-label" for="o-addr1">Address line 1 *</label>
+              <input class="form-input" id="o-addr1" type="text" autocomplete="address-line1" required>
+              <span class="field-error" id="err-o-addr1">Please enter your address.</span>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="o-addr2">Address line 2</label>
+              <input class="form-input" id="o-addr2" type="text" autocomplete="address-line2">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-city">City *</label>
+              <input class="form-input" id="o-city" type="text" autocomplete="address-level2" required>
+              <span class="field-error" id="err-o-city">Please enter your city.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-region">Region / state / province</label>
+              <input class="form-input" id="o-region" type="text" autocomplete="address-level1">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-postcode">Post / zip code *</label>
+              <input class="form-input" id="o-postcode" type="text" autocomplete="postal-code" required>
+              <span class="field-error" id="err-o-postcode">Please enter your post or zip code.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-country">Country *</label>
+              <input class="form-input" id="o-country" type="text" autocomplete="country-name" required>
+              <span class="field-error" id="err-o-country">Please enter your country.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="o-currency">Billing currency *</label>
+              <select class="form-select" id="o-currency" required>
+                <option value="GBP (£)">GBP (&pound;)</option>
+                <option value="EUR (€)">EUR (&euro;)</option>
+                <option value="USD ($)">USD ($)</option>
+              </select>
+            </div>
+          </div>
+          <div class="check-row mt-2">
+            <input type="checkbox" id="o-alt-delivery">
+            <label for="o-alt-delivery">Deliver the AutoLog kit to a different address (tell us in the notes below)</label>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mt-0">Aircraft</h3>
+          <p class="form-note" style="margin-bottom: 14px;">Choose low- or high-activity pricing per aircraft; it's entirely your choice, and high activity typically becomes better value above roughly 200 flying hours a year.</p>
+          <div style="display: grid; gap: 16px;">
+            <fieldset class="order-aircraft">
+              <legend>Aircraft 1 *</legend>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="o-reg-1">Registration *</label>
+                  <input class="form-input mono" id="o-reg-1" type="text" placeholder="G-ABCD" required>
+              <span class="field-error" id="err-o-reg-1">Please enter at least one aircraft registration.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="o-type-1">Aircraft type *</label>
+                  <input class="form-input" id="o-type-1" type="text" placeholder="e.g. PA-28-161" required>
+              <span class="field-error" id="err-o-type-1">Please enter the aircraft type.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="o-cat-1">Category *</label>
+                  <select class="form-select" id="o-cat-1" required>
+                    <option value="Fixed wing">Fixed wing</option>
+                    <option value="Rotary wing">Rotary wing</option>
+                    <option value="Microlight">Microlight</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="radio-row" role="radiogroup" aria-label="Activity level for aircraft 1">
+                <label><input type="radio" name="o-activity-1" value="Low activity" checked> Low activity</label>
+                <label><input type="radio" name="o-activity-1" value="High activity"> High activity</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="order-aircraft">
+              <legend>Aircraft 2</legend>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="o-reg-2">Registration</label>
+                  <input class="form-input mono" id="o-reg-2" type="text" placeholder="G-ABCD">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="o-type-2">Aircraft type</label>
+                  <input class="form-input" id="o-type-2" type="text">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="o-cat-2">Category</label>
+                  <select class="form-select" id="o-cat-2">
+                    <option value="Fixed wing">Fixed wing</option>
+                    <option value="Rotary wing">Rotary wing</option>
+                    <option value="Microlight">Microlight</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="radio-row" role="radiogroup" aria-label="Activity level for aircraft 2">
+                <label><input type="radio" name="o-activity-2" value="Low activity" checked> Low activity</label>
+                <label><input type="radio" name="o-activity-2" value="High activity"> High activity</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="order-aircraft">
+              <legend>Aircraft 3</legend>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="o-reg-3">Registration</label>
+                  <input class="form-input mono" id="o-reg-3" type="text" placeholder="G-ABCD">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="o-type-3">Aircraft type</label>
+                  <input class="form-input" id="o-type-3" type="text">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="o-cat-3">Category</label>
+                  <select class="form-select" id="o-cat-3">
+                    <option value="Fixed wing">Fixed wing</option>
+                    <option value="Rotary wing">Rotary wing</option>
+                    <option value="Microlight">Microlight</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="radio-row" role="radiogroup" aria-label="Activity level for aircraft 3">
+                <label><input type="radio" name="o-activity-3" value="Low activity" checked> Low activity</label>
+                <label><input type="radio" name="o-activity-3" value="High activity"> High activity</label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mt-0">Anything else?</h3>
+          <div class="form-group">
+            <label class="form-label" for="o-notes">Notes: alternative delivery address, installation questions, timing</label>
+            <textarea class="form-textarea" id="o-notes"></textarea>
+          </div>
+        </div>
+
+        <div>
+          <div class="check-row">
+            <input type="checkbox" id="o-terms" required>
+            <label for="o-terms">I accept the <a href="https://www.cloudbasega.aero/terms-and-conditions" rel="noopener">terms &amp; conditions</a> *</label>
+          </div>
+          <span class="field-error" id="err-o-terms">Please accept the terms &amp; conditions to submit your order.</span>
+          <div class="form-status" id="o-status" role="status" style="margin-top: 14px;"></div>
+          <div class="mt-3">
+            <button class="btn btn-primary btn-lg" type="submit">Submit order</button>
+            <p class="form-note mt-2">We'll reply to confirm your order and next steps (including a deposit invoice for non-UK aircraft). We use these details only to process your order. See our <a href="https://www.cloudbasega.aero/privacy-policy" rel="noopener">privacy policy</a>.</p>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/brand/logo-lockup-blue.svg" alt="CloudBaseGA">
+        <p>Automatic flight logging and complete aviation management for flying schools, clubs, private owners, engineers and airfields.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="autolog.html">AutoLog</a></li>
+          <li><a href="platform.html">Online Platform</a></li>
+          <li><a href="pricing.html">Costs &amp; savings</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="clients.html">Clients &amp; testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://uk.trustpilot.com/review/cloudbasega.com" rel="noopener">Trustpilot</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VIAS7--50Vc" rel="noopener">CloudBaseGA on YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="order-form.html">Order form</a></li>
+          <li><a href="https://www.cloudbasega.com/app" rel="noopener">Log in</a></li>
+          <li><a href="https://www.cloudbasega.com/AutoLog-FM%20Installation%20Guidance.pdf" rel="noopener">Installation guidance (PDF)</a></li>
+          <li><a href="mailto:info@cloudbasega.com">info@cloudbasega.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; <span data-year>2026</span> CloudBaseGA. All rights reserved.</span>
+      <span>
+        <a href="https://www.cloudbasega.aero/terms-and-conditions" rel="noopener">Terms &amp; Conditions</a> &nbsp;&middot;&nbsp;
+        <a href="https://www.cloudbasega.aero/privacy-policy" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp;
+        <a href="https://www.cloudbasega.aero/terms-of-use" rel="noopener">Terms of Use</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=7"></script>
+<script>
+  (function () {
+    // Set to the deployed forms worker (see worker/README.md), e.g.
+    // "https://cloudbasega-forms.<account>.workers.dev/order". Left empty,
+    // the form falls back to opening a pre-addressed email in the visitor's
+    // mail app.
+    var ORDER_ENDPOINT = "";
+
+    var form = document.getElementById("order-form");
+    var status = document.getElementById("o-status");
+    var v = function (id) { return (document.getElementById(id) || { value: "" }).value.trim(); };
+    var radio = function (name) {
+      var r = document.querySelector('input[name="' + name + '"]:checked');
+      return r ? r.value : "";
+    };
+
+    var setStatus = function (kind, text) {
+      status.className = "form-status show " + kind;
+      status.textContent = text;
+    };
+
+    var mark = function (id, bad) {
+      var el = document.getElementById(id);
+      if (el && el.classList.contains("form-input")) el.classList.toggle("invalid", bad);
+      var err = document.getElementById("err-" + id);
+      if (err) err.classList.toggle("show", bad);
+      return bad;
+    };
+
+    var REQUIRED = ["o-first", "o-last", "o-phone", "o-email", "o-addr1", "o-city", "o-postcode", "o-country", "o-reg-1", "o-type-1"];
+    var validate = function () {
+      var bad = false;
+      REQUIRED.forEach(function (id) {
+        var empty = id === "o-email" ? !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v(id)) : !v(id);
+        bad = mark(id, empty) || bad;
+      });
+      bad = mark("o-terms", !document.getElementById("o-terms").checked) || bad;
+      return !bad;
+    };
+
+    REQUIRED.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener("input", function () { mark(id, false); });
+    });
+    document.getElementById("o-terms").addEventListener("change", function () { mark("o-terms", false); });
+
+    var buildBody = function () {
+      var aircraft = "";
+      for (var i = 1; i <= 3; i++) {
+        if (v("o-reg-" + i)) {
+          aircraft += "\nAircraft " + i + ": " + v("o-reg-" + i).toUpperCase() +
+            " - " + v("o-type-" + i) + " (" + v("o-cat-" + i) + "), " + radio("o-activity-" + i);
+        }
+      }
+      return "ORDER - CloudBaseGA\n\n" +
+        "Name: " + v("o-first") + " " + v("o-last") + "\n" +
+        "Company: " + (v("o-company") || "-") + "\n" +
+        "Phone: " + v("o-phone") + "\n" +
+        "Contact email: " + v("o-email") + "\n" +
+        "Billing email: " + (v("o-billing-email") || "same as contact") + "\n\n" +
+        "Billing address:\n" + v("o-addr1") +
+        (v("o-addr2") ? "\n" + v("o-addr2") : "") +
+        "\n" + v("o-city") + (v("o-region") ? ", " + v("o-region") : "") +
+        "\n" + v("o-postcode") + "\n" + v("o-country") + "\n" +
+        "Billing currency: " + v("o-currency") + "\n" +
+        "Alternative delivery address: " + (document.getElementById("o-alt-delivery").checked ? "yes, see notes" : "no") + "\n" +
+        "\nAircraft:" + (aircraft || "\n(none listed)") + "\n\n" +
+        "Notes:\n" + (v("o-notes") || "-") + "\n\n" +
+        "Terms & conditions accepted: yes";
+    };
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.className = "form-status";
+      if (v("o-website")) { // honeypot: pretend success, send nothing
+        setStatus("success", "Thanks, your order has been received.");
+        return;
+      }
+      if (!validate()) {
+        setStatus("error", "Please fix the highlighted fields and try again.");
+        var firstBad = form.querySelector(".invalid");
+        if (firstBad) firstBad.focus();
+        return;
+      }
+      if (ORDER_ENDPOINT) {
+        var aircraft = [];
+        for (var i = 1; i <= 3; i++) {
+          if (v("o-reg-" + i)) {
+            aircraft.push({
+              reg: v("o-reg-" + i).toUpperCase(),
+              type: v("o-type-" + i),
+              category: v("o-cat-" + i),
+              activity: radio("o-activity-" + i)
+            });
+          }
+        }
+        var payload = {
+          form: "order",
+          first: v("o-first"),
+          last: v("o-last"),
+          company: v("o-company"),
+          phone: v("o-phone"),
+          email: v("o-email"),
+          billingEmail: v("o-billing-email"),
+          address: {
+            line1: v("o-addr1"),
+            line2: v("o-addr2"),
+            city: v("o-city"),
+            region: v("o-region"),
+            postcode: v("o-postcode"),
+            country: v("o-country")
+          },
+          currency: v("o-currency"),
+          altDelivery: document.getElementById("o-alt-delivery").checked,
+          aircraft: aircraft,
+          notes: v("o-notes"),
+          termsAccepted: true
+        };
+        var btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        fetch(ORDER_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(payload)
+        }).then(function (r) {
+          if (!r.ok) throw new Error("bad status");
+          form.reset();
+          setStatus("success", "Thanks, your order has been sent. We'll reply to confirm it and the next steps.");
+        }).catch(function () {
+          setStatus("error", "Something went wrong sending your order. Please try again, or email info@cloudbasega.com directly.");
+        }).finally(function () { btn.disabled = false; });
+      } else {
+        location.href = "mailto:info@cloudbasega.com?cc=ben%40cloudbasega.com&subject=" +
+          encodeURIComponent("AutoLog Order Form got a new submission") +
+          "&body=" + encodeURIComponent(buildBody());
+        setStatus("success", "Your email app has opened with the completed order ready to send. Nothing is sent until you press send there.");
+      }
+    });
+  })();
+</script>
+</body>
+</html>
