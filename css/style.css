@@ -343,6 +343,25 @@ td.cell-yes { background: var(--success-bg); color: var(--success-text); }
 td.cell-part { background: var(--warning-bg); color: var(--warning-text); }
 td.cell-no { background: var(--danger-bg); color: var(--danger); }
 
+/* Comparison table: three columns are too wide for phones, so stack each row
+   into a labelled, colour-coded card. The data-label on each verdict cell
+   carries its column question (the thead is hidden here). */
+@media (max-width: 640px) {
+  .compare-table table, .compare-table tbody, .compare-table tr, .compare-table td { display: block; width: auto; }
+  .compare-table thead { display: none; }
+  .compare-table tbody > tr { border-bottom: 4px solid var(--gray-100); }
+  .compare-table tbody > tr:last-child { border-bottom: none; }
+  .compare-table tbody > tr > th { display: block; width: auto; font-size: 15.5px; font-weight: 700; color: var(--gray-900); }
+  .compare-table td { border-bottom: 1px solid #fff; }
+  .compare-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.02em;
+    text-transform: uppercase; color: var(--gray-500);
+    margin-bottom: 5px;
+  }
+}
+
 /* Pills / badges ----------------------------------------------------------------- */
 .pill {
   display: inline-flex; align-items: center; gap: 7px;
