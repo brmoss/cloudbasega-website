@@ -328,6 +328,13 @@ p { margin: 0 0 1em; }
 .spec-table-wrap td { color: var(--gray-600); border-bottom: 1px solid var(--gray-100); }
 .spec-table-wrap tr:last-child th, .spec-table-wrap tr:last-child td { border-bottom: none; }
 
+/* Verdict cells (comparison tables): green = solved, amber = partly, red = not */
+.cell-verdict { display: flex; align-items: flex-start; gap: 9px; }
+.cell-verdict .ci { flex-shrink: 0; margin-top: 3.5px; }
+td.cell-yes { background: var(--success-bg); color: var(--success-text); }
+td.cell-part { background: var(--warning-bg); color: var(--warning-text); }
+td.cell-no { background: var(--danger-bg); color: var(--danger); }
+
 /* Pills / badges ----------------------------------------------------------------- */
 .pill {
   display: inline-flex; align-items: center; gap: 7px;
