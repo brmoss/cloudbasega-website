@@ -13,13 +13,25 @@ python3 -m http.server 8000
 |---|---|
 | `index.html` | Home — value proposition, how it works, stats, clients, testimonials |
 | `autolog.html` | The AutoLog flight data recorder — how it works, tech specs, compliance |
-| `platform.html` | Online Platform — bookings, eTechLog, invoicing, student records, movements |
+| `platform.html` | Online Platform — bookings, eTechLog, invoicing, student records, movements. **Currently shows the legacy app** (director's call until the new platform fully launches) |
+| `platform-new.html` | Standby copy of the platform page with new-app renders, noindexed and unlinked, ready to swap in |
 | `pricing.html` | Costs & savings — pricing model, promises, interactive savings calculator |
 | `clients.html` | Who we serve, testimonials, client logos |
 | `faqs.html` | FAQ accordions grouped by topic |
 | `order-form.html` | Order form — contact/billing details, up to 3 aircraft with per-aircraft activity option, GBP/EUR/USD |
 | `contact.html` | Enquiry form and contact details |
 | `404.html` | Not-found page (served automatically by GitHub Pages) |
+
+## Platform page: legacy vs new
+
+The live `platform.html` uses screenshots of the **legacy app** (cloudbasega.com/app,
+demo school data) in `assets/img/product/legacy/`. The version showcasing the new
+app is preserved as `platform-new.html` (noindexed, not linked). **To swap to the
+new-app version when it launches:** `mv platform-new.html platform.html`, remove
+the standby comment and the `robots noindex` meta at the top, and push. The
+legacy screenshots were captured with `tools/legacy-capture/legacy-driver.mjs`
+(headed Playwright with a manual login — run it, log in, then drive it over
+http://127.0.0.1:8788; see the header comment).
 
 ## Preview deployment
 
